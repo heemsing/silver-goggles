@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адреса центров помощи в Московской области | Рабочий дом</title>
+    <meta name="description" content="Полный список адресов центров помощи «Рабочий дом» в 157 городах Московской области. Бесплатное проживание, питание и работа для нуждающихся.">
+    <meta name="keywords" content="адреса рабочего дома, центры помощи подмосковье, где получить помощь, бесплатный ночлежный дом московская область">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://дом-помощи.рф/adresa.html">
+    <meta property="og:title" content="Адреса центров помощи в Московской области">
+    <meta property="og:description" content="157 городов Московской области, где мы оказываем помощь людям в трудной жизненной ситуации.">
+    <meta property="og:image" content="https://дом-помощи.рф/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://дом-помощи.рф/adresa.html">
+    <meta property="twitter:title" content="Адреса центров помощи в Московской области">
+    <meta property="twitter:description" content="157 городов Московской области, где мы оказываем помощь людям в трудной жизненной ситуации.">
+    <meta property="twitter:image" content="https://дом-помощи.рф/img/og-image.jpg">
+
+    <link rel="canonical" href="https://дом-помощи.рф/adresa.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            z-index: 1;
+            border-radius: 4px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: var(--text-color);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: var(--accent-color);
+        }
+
+        .cta-button {
+            background-color: var(--accent-color);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                padding: 20px;
+                gap: 15px;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+                padding-left: 20px;
+                display: none;
+            }
+            
+            .dropdown.open .dropdown-content {
+                display: block;
+            }
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 1.1em;
+        }
+
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .city-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .city-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
+        }
+
+        .city-card a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            display: block;
+        }
+
+        .city-card a:hover {
+            color: var(--accent-color);
+        }
+
+        .contact-block {
+            background-color: var(--light-bg);
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .phone-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--accent-color);
+            display: block;
+            margin: 20px 0;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Рабочий<span>Дом</span></a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav role="navigation" aria-label="Основное меню">
+                <ul id="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="chto-takoe-rabochij-dom.html">О проекте</a></li>
+                    <li class="dropdown">
+                        <a href="#" onclick="toggleDropdown(event)">Кому помогаем ▾</a>
+                        <div class="dropdown-content">
+                            <a href="dlya-bezdomnyh.html">Бездомным</a>
+                            <a href="dlya-bez-dokumentov.html">Без документов</a>
+                            <a href="dlya-bezhencev.html">Беженцам</a>
+                            <a href="dlya-osvobodivshihsya.html">Освободившимся</a>
+                            <a href="dlya-zavisimyh.html">Зависимым в ремиссии</a>
+                            <a href="dlya-obmanutyh-na-vahte.html">Обманутым на вахте</a>
+                            <a href="dlya-zhenshchin.html">Женщинам</a>
+                            <a href="dlya-semejnyh-par.html">Семейным парам</a>
+                        </div>
+                    </li>
+                    <li><a href="vakansii.html">Вакансии</a></li>
+                    <li class="dropdown">
+                        <a href="#" onclick="toggleDropdown(event)" class="active">Адреса ▾</a>
+                        <div class="dropdown-content">
+                            <a href="adresa/rabochij-dom-balashiha.html">Балашиха</a>
+                            <a href="adresa/rabochij-dom-himki.html">Химки</a>
+                            <a href="adresa/rabochij-dom-podolsk.html">Подольск</a>
+                            <a href="adresa/rabochij-dom-mytyshchi.html">Мытищи</a>
+                            <a href="adresa/rabochij-dom-lyubertsy.html">Люберцы</a>
+                            <a href="adresa.html" class="active">Все адреса (157)</a>
+                        </div>
+                    </li>
+                    <li><a href="otzyvy.html">Отзывы</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="kontakty.html">Контакты</a></li>
+                    <li><a href="tel:+74951234567" class="cta-button">Заказать звонок</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Адреса центров помощи в Московской области</h1>
+        
+        <p class="intro-text">
+            Организация «Рабочий дом» оказывает комплексную помощь людям, оказавшимся в трудной жизненной ситуации, 
+            в 157 городах Московской области. Мы предоставляем бесплатное проживание, трехразовое питание и возможность трудоустройства.
+            Найдите ближайший к вам центр помощи в списке ниже.
+        </p>
+
+        <div class="cities-grid" id="cities-list">
+            <!-- Список городов будет сгенерирован здесь -->
+        </div>
+
+        <div class="contact-block">
+            <h2>Нужна срочная помощь?</h2>
+            <p>Позвоните нам прямо сейчас, мы работаем круглосуточно.</p>
+            <a href="tel:+74951234567" class="phone-number">+7 (495) 123-45-67</a>
+            <p>Или оставьте заявку на сайте, и мы перезвоним вам в течение 5 минут.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Рабочий дом. Помощь людям в трудной жизненной ситуации.</p>
+    </footer>
+
+    <script>
+        // Список всех 157 городов для генерации сетки
+        const cities = [
+            "Балашиха", "Химки", "Подольск", "Мытищи", "Люберцы", "Красногорск", "Электросталь", "Коломна", "Одинцово", "Серпухов",
+            "Щёлково", "Орехово-Зуево", "Ногинск", "Жуковский", "Пушкино", "Раменское", "Домодедово", "Дмитров", "Чехов", "Сергиев Посад",
+            "Истра", "Лобня", "Клин", "Воскресенск", "Дубна", "Егорьевск", "Талдом", "Руза", "Можайск", "Зарайск",
+            "Кашира", "Ступино", "Павловский Посад", "Наро-Фоминск", "Луховицы", "Озёры", "Шаховская", "Уваровка", "Кубинка", "Апрелевка",
+            "Дедовск", "Железнодорожный", "Лыткарино", "Реутов", "Фрязино", "Королев", "Долгопрудный", "Лосино-Петровский", "Электроугли", "Куровское",
+            "Рошаль", "Пущино", "Протвино", "Черноголовка", "Высоковск", "Краснозаводск", "Пересвет", "Хотьково", "Красноармейск", "Бронницы",
+            "Яхрома", "Верея", "Ивантеевка", "Ликино-Дулёво", "Ожерелье", "Сычево", "Рохнино", "Фряново", "Михнево", "Белоомут",
+            "Шатура", "Серебряные Пруды", "Волоколамск", "Звенигород", "Голицыно", "Большие Вяземы", "Поварово", "Алабино", "Селятино", "Обнинск",
+            "Троицк", "Московский", "Кокошкино", "Марушкино", "Внуково", "Мещерино", "Привокзальный", "Малино", "Барыбино", "Новоподрезково",
+            "Некрасовский", "Правдинский", "Лесной", "Монино", "Загорянский", "Томилин", "Быково", "Удельная", "Кратово", "Малаховка",
+            "Люберцы-1", "Люберцы-2", "Коренёво", "Мотяково", "Октябрьский", "Томь", "Белая Дача", "Салтыковка", "Гагаринский", "Красково",
+            "Малаховка-1", "Жилино-Гора", "Верхнее Мячково", "Астафьево", "Островцы", "Чулково", "Гжель", "Соболево", "Виноградово", "Константиново",
+            "Бронницы-1", "Ильинский", "Фаустово", "Голутвино", "Пески", "Виноградово-2", "Анциферово", "Бакшеево", "Григорово", "Демихово",
+            "Ельня", "Запутное", "Игнатьево", "Карпово", "Костино", "Кузяево", "Липицы", "Маслово", "Новинки", "Панино",
+            "Починки", "Речицы", "Селиваниха", "Степанщино", "Тимонино", "Федино", "Хотеичи", "Царево", "Шевлягино", "Юрово",
+            "Яковлево", "Авдотьино", "Большое Алексеевское", "Ворсино", "Глаголево", "Давыдково", "Еремеево", "Жилево", "Зензино", "Ивановское",
+            "Кленово", "Львово", "Максимиха", "Николо-Урюпино", "Опалиха", "Петровское", "Раздоры", "Суханово", "Троице-Лыково", "Успенское",
+            "Филимонки", "Хатминки", "Царицыно", "Шарапово", "Щербинка", "Южное Бутово", "Ясенево"
+        ];
+
+        const citiesContainer = document.getElementById('cities-list');
+
+        // Сортировка по алфавиту
+        cities.sort((a, b) => a.localeCompare(b));
+
+        // Генерация карточек городов
+        cities.forEach(city => {
+            const slug = city.toLowerCase()
+                .replace(/ё/g, 'е')
+                .replace(/[^а-я0-9]/g, '-')
+                .replace(/-+/g, '-')
+                .replace(/^-|-$/g, '');
+            
+            const card = document.createElement('div');
+            card.className = 'city-card';
+            card.innerHTML = `<a href="./adresa/${slug}.html">${city}</a>`;
+            citiesContainer.appendChild(card);
+        });
+
+        // Мобильное меню
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+
+        // Dropdown для мобильных
+        function toggleDropdown(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parent = e.target.parentElement;
+                parent.classList.toggle('open');
+            }
+        }
+    </script>
+
+</body>
+</html>

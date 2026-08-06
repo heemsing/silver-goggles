@@ -57,8 +57,8 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="dns-prefetch" href="https://дом-помощи.рф">
 
-<link rel="stylesheet" href="./css/index.css">
-<link rel="stylesheet" href="./css/700.css">
+<link rel="stylesheet" href="css/index.css"""">
+<link rel="stylesheet" href="css/700.css"""">
 
 <!-- Schema.org JSON-LD: LocalBusiness -->
 <script type="application/ld+json">
@@ -577,6 +577,41 @@ section{padding:80px 0;position:relative}
   .float-btns{bottom:14px;right:14px}
   .float-btn{width:46px;height:46px;font-size:18px}
 }
+
+    /* Dropdown Navigation */
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle { cursor: pointer; padding: 0.5rem 0; }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      min-width: 220px;
+      z-index: 1000;
+      padding: 0.5rem 0;
+    }
+    .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a {
+      display: block;
+      padding: 0.6rem 1.2rem;
+      color: #333;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .dropdown-menu a:hover { background: #f5f5f5; }
+    @media (max-width: 768px) {
+      .nav-dropdown { display: block; }
+      .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: #f9f9f9;
+        display: none;
+      }
+      .nav-dropdown.active .dropdown-menu { display: block; }
+    }
 </style>
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
@@ -591,13 +626,37 @@ section{padding:80px 0;position:relative}
         <span class="logo-sub">В Москве</span>
       </div>
     </a>
-    <nav class="nav" id="nav" role="navigation" aria-label="Основная навигация">
-      <a href="https://дом-помощи.рф/#guarantees">Преимущества</a>
-      <a href="https://дом-помощи.рф/#about">О нас</a>
-      <a href="https://дом-помощи.рф/#jobs">Вакансии</a>
-      <a href="https://дом-помощи.рф/#reviews">Отзывы</a>
-      <a href="https://дом-помощи.рф/#faq">FAQ</a>
-      <a href="./kontakty" class="active">Контакты</a>
+        <nav class="nav" id="nav" role="navigation" aria-label="Основная навигация">
+      <a href="index.html"" class="">Главная</a>
+      <a href="chto-takoe-rabochij-dom.html"" class="">О проекте</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-toggle">Кому помогаем ▾</a>
+        <div class="dropdown-menu">
+          <a href="dlya-bezdomnyh.html"">Бездомным</a>
+          <a href="dlya-bez-dokumentov.html"">Без документов</a>
+          <a href="dlya-bezhencev.html"">Беженцам</a>
+          <a href="dlya-osvobodivshihsya.html"">Освободившимся</a>
+          <a href="dlya-zavisimyh.html"">Зависимым в ремиссии</a>
+          <a href="dlya-obmanutyh-na-vahte.html"">Обманутым на вахте</a>
+          <a href="dlya-zhenshchin.html"">Женщинам</a>
+          <a href="dlya-semejnyh-par.html"">Семейным парам</a>
+        </div>
+      </div>
+      <a href="vakansii.html"" class="">Вакансии</a>
+      <div class="nav-dropdown">
+        <a href="#" class="dropdown-toggle">Адреса ▾</a>
+        <div class="dropdown-menu">
+          <a href="adresa/rabochij-dom-balashiha.html"">Балашиха</a>
+          <a href="adresa/rabochij-dom-himki.html""">Химки</a>
+          <a href="adresa/rabochij-dom-podolsk.html"">Подольск</a>
+          <a href="adresa/rabochij-dom-mytyshchi.html""">Мытищи</a>
+          <a href="adresa/rabochij-dom-lyubertsy.html""">Люберцы</a>
+          <a href="adresa.html"">Все адреса (157 городов)</a>
+        </div>
+      </div>
+      <a href="otzyvy.html"" class="">Отзывы</a>
+      <a href="blog.html"" class="">Блог</a>
+      <a href="kontakty.html"" class=" active">Контакты</a>
       <button class="btn btn-primary" onclick="openModal()" aria-label="Заказать обратный звонок">Заказать звонок</button>
     </nav>
     <button class="burger" id="burger" aria-label="Открыть меню навигации" aria-expanded="false">
@@ -786,7 +845,7 @@ section{padding:80px 0;position:relative}
           <li><a href="https://дом-помощи.рф/#jobs">Вакансии</a></li>
           <li><a href="https://дом-помощи.рф/#reviews">Отзывы</a></li>
           <li><a href="https://дом-помощи.рф/#faq">FAQ</a></li>
-          <li><a href="./kontakty">Контакты</a></li>
+          <li><a href="kontakty.html"">Контакты</a></li>
         </ul>
       </nav>
       <div>
@@ -795,7 +854,7 @@ section{padding:80px 0;position:relative}
           <li><a href="https://дом-помощи.рф/#faq">Правила проживания</a></li>
           <li><a href="https://дом-помощи.рф/#about">Как к нам попасть</a></li>
           <li><a href="https://дом-помощи.рф/#faq">Восстановление документов</a></li>
-          <li><a href="./privacy">Политика конфиденциальности</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
         </ul>
       </div>
       <div>
