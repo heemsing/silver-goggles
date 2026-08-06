@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# 1. Внешний редирект 301: если запрошен адрес с .html, перенаправляем на адрес без .html
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# 2. Внутренняя перезапись: ПРИОРИТЕТ ФАЙЛУ .html над одноименной папкой
+# Если файл .html существует, отдаем его, даже если есть папка с таким же именем
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# 3. Если файла .html нет, но есть папка — отдаем содержимое папки
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+?)/?$ $1/ [L]
